@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="sidebar">
+  <a href="#" onclick="closeNav()">Close</a>
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+
+<div id="main">
+  <button class="btn btn-primary" onclick="openNav()">Open Sidebar</button>
+  <h2>Lorem ipsum dolor sit amet consectetr adipisicing elit. Consectetur nemo asperiores labore adipisci, fuga ullam eligendi iure ipsam nostrum incidunt cupiditate veniam omnis reiciendis velit aliquam illo consequatur qui eum.
+  Eaque laborum perspiciatis iure ad aliquid velit architecto nobis beatae molestiae accusamus mollitia expedita neque numquam deleniti eveniet voluptatum voluptatem, cupiditate tenetur aut dolor, blanditiis quo, aliquam hic ducimus. Minus.
+  </p>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("sidebar").style.left = "-250px";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
+
+</body>
+</html>
